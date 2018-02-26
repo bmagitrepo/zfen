@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="112dp"
+    android:paddingBottom="56dp"
+    android:paddingRight="@dimen/horizontal_margin"
+    android:paddingLeft="@dimen/horizontal_margin">
+
+    <com.zoomlee.zoo.ui.view.ZMEditText
+        android:id="@+id/addTagEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_tag"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_large"
+        android:singleLine="true"
+        android:paddingRight="32dp"
+        android:textColorHint="@color/text_hint" />
+
+    <ImageView
+        android:contentDescription="@string/description_add_tag"
+        android:id="@+id/addNewTagBtn"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_new_tag"
+        android:visibility="gone" />
+</FrameLayout>

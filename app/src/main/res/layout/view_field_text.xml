@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/include_field_title" />
+
+    <com.zoomlee.zoo.ui.view.ZMEditText
+        android:id="@+id/valueEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:textColor="@color/text_gray"
+        android:ellipsize="end"
+        android:textSize="@dimen/text_large"
+        android:layout_marginBottom="@dimen/outer_field_margin" />
+</merge>

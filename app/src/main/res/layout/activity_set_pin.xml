@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zoomlee.zoo.ui.activity.SetPinActivity">
+
+    <com.zoomlee.zoo.ui.view.BetterTextSwitcher
+        android:id="@+id/textSwitcher"
+        android:paddingTop="28dp"
+        android:gravity="center_horizontal|top"
+        android:background="@drawable/envelope_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.zoomlee.zoo.ui.view.CreatePinView
+        android:id="@+id/confirmPinView"
+        android:layout_width="228dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/textSwitcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:focusableInTouchMode="true"
+        android:inputType="numberPassword"
+        android:selectAllOnFocus="false"
+        android:textIsSelectable="false"
+        android:textSelectHandle="@null" />
+
+    <com.zoomlee.zoo.ui.view.CreatePinView
+        android:id="@+id/createPinView"
+        android:layout_width="228dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/textSwitcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:focusableInTouchMode="true"
+        android:inputType="numberPassword"
+        android:selectAllOnFocus="false"
+        android:textIsSelectable="false"
+        android:textSelectHandle="@null" />
+</RelativeLayout>

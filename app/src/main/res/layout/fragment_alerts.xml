@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@android:id/list"
+        layout="@layout/include_complex_divider_list" />
+
+    <com.zoomlee.zoo.ui.view.EmptyView
+        android:id="@+id/noDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:textMessage="@string/message_alerts_explanation"
+        app:textTitle="@string/message_empty_alerts" />
+</RelativeLayout>

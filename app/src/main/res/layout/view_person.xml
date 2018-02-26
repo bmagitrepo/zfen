@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="@layout/fragment_navigation_drawer">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/personAvatarIv"
+            android:contentDescription="@string/description_add_person"
+            android:layout_width="@dimen/button_height"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="6dp" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            android:id="@+id/personNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="6dp"
+            android:textSize="@dimen/text_normal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text_stateful" />
+    </LinearLayout>
+</merge>

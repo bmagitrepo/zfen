@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nameTv"
+            style="@style/ContentFrameText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:textColor="@color/text_gray"
+            tools:text="Arrival" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            style="@style/ContentFrameText"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:textColor="@color/text_gray"
+            tools:text="Aug 12, 2014" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/topDivider"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/divider_color"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zoomlee.zoo.ui.view.wheel.WheelDatePicker
+            android:id="@+id/dateWheelView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/date_wheel_view_height"
+            android:visibility="gone"
+            app:selectedBackground="@color/item_checked"
+            app:textColor="@color/text_gray"
+            app:textFont="@string/font_light"
+            app:textSelectedColor="@color/green_zoomlee" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/bottomDivider"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/divider_color"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/separator"
+        layout="@layout/include_separator_content_frame" />
+</LinearLayout>

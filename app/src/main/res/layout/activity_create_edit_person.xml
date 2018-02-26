@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_content"
+    android:orientation="vertical"
+    tools:context="com.zoomlee.zoo.ui.activity.CreateEditPersonActivity">
+
+    <include layout="@layout/include_splash_cover" />
+
+    <include layout="@layout/toolbar" />
+
+    <include layout="@layout/toolbar_cancel_ok" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/create_edit_person_fragment"
+            android:name="com.zoomlee.zoo.ui.fragments.CreateEditPersonFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/include_toolbar_shadow" />
+    </FrameLayout>
+</LinearLayout>

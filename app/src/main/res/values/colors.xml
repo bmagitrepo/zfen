@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- general color -->
+    <color name="white">#ffffff</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_60">#99000000</color>
+
+    <color name="divider_menu">#0dffffff</color>
+
+    <color name="item_pressed">#0a000000</color>
+    <color name="text_gray">#323c47</color>
+
+    <color name="green_zoomlee">#5cbc6b</color>
+    <color name="green_bright">#40af62</color>
+    <color name="green_bright_50">#8040af62</color>
+    <color name="green_bright_dark">#3ca35b</color>
+    <color name="dark_orange">#ea4d39</color>
+    <color name="incitation_orange">#ff8d40</color>
+
+    <color name="text_4d">#4d4d4d</color>
+
+    <color name="toolbar_action_pressed">#802f873b</color>
+
+    <color name="text_error">#ff6857</color>
+    <color name="text_empty">#55585b</color>
+    <color name="text_hint">#a7a9ac</color>
+
+    <color name="disabled">#b1b4b6</color>
+
+    <color name="grey_pin_button">#3e4349</color>
+    <color name="pin_item_empty">#808384</color>
+
+    <color name="bg_grey">#36393d</color>
+
+    <!-- Status bar -->
+    <color name="status_grey">#303337</color>
+    <color name="status_green">#53a960</color>
+    <color name="status_white">#dedfe2</color>
+
+    <!-- Material dialog -->
+    <color name="card_background">#fafafa</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="window_background">#00000000</color>
+
+    <!-- MainActivity -->
+    <color name="bg_content">#f7f8fc</color>
+
+    <!--DocumentsActivity-->
+    <color name="divider_color">#dadde0</color>
+
+    <!--DocumentDetailsActivity-->
+    <color name="unchecked_rb">#8067696b</color>
+
+    <!-- CreateEditDocActivity -->
+    <color name="unselected_tab">#70ffffff</color>
+
+    <!-- CategoryTypeListActivity -->
+    <color name="text_category_type_header">#2fa141</color>
+    <color name="item_checked">#f9f4e1</color>
+
+    <!-- Forms-->
+    <color name="us_form_color">#4481a9</color>
+
+    <!-- Tax item -->
+    <color name="text_light_grey">#94989b</color>
+
+    <!-- CreateEditTaxActivity-->
+    <color name="text_disabled">#c4c2c3</color>
+    <color name="title_disabled">#9fdea9</color>
+
+</resources>

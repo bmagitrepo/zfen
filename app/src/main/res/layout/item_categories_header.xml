@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hiding_divider_height"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <com.zoomlee.zoo.ui.view.ZMTextView
+        android:id="@+id/nameTv"
+        style="@style/ItemSection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_vertical"
+        app:font="@string/font_medium" />
+</FrameLayout>

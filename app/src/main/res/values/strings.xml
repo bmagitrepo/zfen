@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_edit">Edit</string>
+    <string name="ok">Ok</string>
+    <string name="ok_upper">OK</string>
+    <string name="title_warning">Warning</string>
+    <string name="message_delete_confirmation">Are sure you want to delete this attachment?</string>
+    <string name="message_empty_tags">YOU HAVE NO TAGS</string>
+    <string name="title_delete">Delete</string>
+    <string name="add_document">Add Document</string>
+
+    <string name="no_documents">No documents</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="case_number">Case Number</string>
+
+    <string name="font_bold">fonts/Roboto-Bold.ttf</string>
+    <string name="font_light">fonts/Roboto-Light.ttf</string>
+    <string name="font_medium">fonts/Roboto-Medium.ttf</string>
+    <string name="font_regular">fonts/Roboto-Regular.ttf</string>
+
+    <!-- Login -->
+    <string name="hint_your_phone_number_or_email">Your phone number or email</string>
+    <string name="title_continue">CONTINUE</string>
+    <string name="login_note">If your phone is lost or stolen,\nyou may access your documents\nvia your email or phone number</string>
+    <!-- //Login -->
+
+    <!-- Passcode -->
+    <string name="passcode">Passcode</string>
+    <string name="we_have_sent_passcode_to">Your passcode has been sent to you at\n%s</string>
+    <string name="resend_passcode">RESEND PASSCODE</string>
+    <string name="wrong_passcode">Passcode is not valid</string>
+    <string name="wrong_passcode_msg">You entered the wrong passcode three times in a row.\nPlease generate new one.</string>
+    <!-- //Passcode -->
+
+
+    <!-- Nav drawer -->
+    <string name="add">Add</string>
+    <string name="documents">Documents</string>
+    <string name="forms">Forms</string>
+    <string name="notifications">Notifications</string>
+    <string name="my_trips">Tax Tracking</string>
+    <string name="be_safe">Be Safe</string>
+    <string name="settings">Settings</string>
+    <string name="community">Community</string>
+    <!-- //Nav drawer -->
+
+
+    <!-- BeSafe Fragment -->
+    <string name="police">Police</string>
+    <string name="hospital">Hospital</string>
+    <string name="consulate">Consulate</string>
+    <string name="address">address</string>
+    <string name="phone">phone</string>
+    <!-- //BeSafe Fragment -->
+
+
+    <!-- Documents Activity -->
+    <string name="add_to_existing">Add to existing</string>
+    <string name="create_document">Create document</string>
+    <!-- //Documents Activity -->
+
+    <!-- Settings Fragment -->
+    <string name="edit_photo">Edit photo</string>
+    <string name="add_photo">Add photo</string>
+    <string name="login_information">Login information</string>
+    <string name="add_phone">Add Phone</string>
+    <string name="add_email">Add Email</string>
+    <string name="you_can_log_in_to_zoomlee_using_both_phone_number_or_email">You can log in to Zoomlee using both phone\nnumber or email</string>
+    <string name="home_country">Home country</string>
+    <string name="subscription">Subscription</string>
+    <string name="security">Security</string>
+    <string name="manage_subscription">Manage Subscription</string>
+    <string name="change_pin_code">Change PIN code</string>
+    <string name="family_and_tags">Family And Tags</string>
+    <string name="tags">Tags</string>
+    <string name="invite">Invite</string>
+    <string name="invite_friends_to_zoomlee">Invite friends to Zoomlee</string>
+    <string name="if_you_like_zoomlee_invite_your_friends_so_they_also_can_store_all_their_documents_in_one_place">If you like Zoomlee, invite your friends, so they also can store all their documents in one place</string>
+    <string name="manage_family_members">Manage family members</string>
+    <string name="feedback">Feedback</string>
+    <string name="write_play_market_review">Write Play Market review</string>
+    <string name="email_feedback">Email feedback</string>
+    <string name="take_photo">Take photo</string>
+    <string name="choose_from_gallery">Choose from gallery</string>
+    <string name="tap_to_select_country">Tap to select country</string>
+    <!-- //Settings Fragment -->
+
+
+    <!-- Create/Edit Document -->
+    <string name="general">General</string>
+    <string name="data_fields">Data Fields</string>
+    <string name="attachemnts">Attachments</string>
+    <string name="new_document">New Document</string>
+    <string name="notes">Notes</string>
+    <string name="family_member">Family Member</string>
+    <string name="category_and_type">Category and Type</string>
+    <string name="document_name">Document name</string>
+    <string name="delete_document_uc">DELETE DOCUMENT</string>
+    <string name="add_data_field_uc">ADD DATA FIELD</string>
+    <string name="this_document_has_no_attachments">This document has\nno attachments</string>
+    <string name="action_save">Save</string>
+    <string name="write_your_notes_here">Write your notes here</string>
+    <string name="other_document">Other document</string>
+    <string name="are_you_sure_you_want_to_delete_this_document">Are you sure you want to delete this document?</string>
+    <string name="nothing_found">Nothing found</string>
+    <string name="add_text_field">Add Text Field</string>
+    <string name="add_date_field">Add Date Field</string>
+    <string name="add_tag">Add tag</string>
+    <!-- // Create/Edit Document -->
+
+    <!-- Tax -->
+    <plurals name="days">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+
+
+    <!-- DatePicker Dialog -->
+    <string name="remind_me">Remind Me</string>
+    <!-- // DatePicker Dialog -->
+
+    <!-- Change email/phone -->
+    <string name="update_phone_note">If your phone is lost or stolen,\nyou may access your documents\nvia your phone number</string>
+    <string name="update_email_note">If your phone is lost or stolen,\nyou may access your documents\nvia your email</string>
+    <string name="update_btn_text">UPDATE</string>
+    <string name="add_btn_text">ADD</string>
+    <string name="your_phone_number">Your phone number</string>
+    <string name="your_email">Your email</string>
+    <string name="phone_title">Phone Number</string>
+    <string name="email_title">Email</string>
+    <string name="confirmation_title">Confirmation</string>
+    <!-- // Change email/phone -->
+
+
+    <!-- Rooted device alert -->
+    <string name="device_is_rooted">Device is rooted</string>
+    <string name="root_alert_msg">Your device is rooted. By accepting this agreement you accept that Zoomlee is not responsible for the safety of your documents from this moment.</string>
+    <string name="accept">Accept</string>
+    <string name="accept_and_dont_show_again">Accept and\ndon\'t show again</string>
+    <!-- // Rooted device alert -->
+
+    <!-- NoConnection alert -->
+    <string name="noconnection_title">Connection Error</string>
+    <string name="noconnection_message">Sorry, cannot connect to the server. Please try again later</string>
+    <!-- // NoConnection alert -->
+
+    <!-- CreateEditPersonActivity-->
+    <string name="name">Name</string>
+    <string name="delete_family_member">DELETE FAMILY MEMBER</string>
+    <string name="delete_note">All family member\'s\ndocuments will be deleted</string>
+    <string name="type_name_here">Type name here</string>
+    <!-- // CreateEditPersonActivity-->
+
+    <!-- Taxes -->
+    <string name="renew_subscription_badge_text">Zoomlee pro subscription has ended. Renew to use tax tracking</string>
+    <!-- //Taxes -->
+
+    <string name="no_app_to_share">You need to have Gmail app to use sharing</string>
+    <string name="to_store_your_documents_securely_please_create_zoomlee_pin_code">
+        Create a custom Zoomlee PIN Code\nto store your documents securely
+    </string>
+    <string name="confirm_pincode">Confirm PIN Code</string>
+    <string name="create_pincode">Create PIN Code</string>
+    <string name="please_enter_pin_code_again">Please enter PIN code\nagain</string>
+    <string name="enter_your_pin_code">Enter your PIN code</string>
+    <string name="i_forgot_my_pin">I FORGOT MY PIN</string>
+    <string name="pin_reset">Pin reset</string>
+    <string name="log_out_and_log_in_back_to_reset_your_pin">Note, all not synced data will be lost!</string>
+    <string name="cancel_uc">CANCEL</string>
+    <string name="logout_uc">LOGOUT</string>
+    <string name="title_activity_passcode">Passcode</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_pin">PinActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_create_pin">@string/create_pincode</string>
+    <string name="title_activity_nav_draw">NavDrawActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_countries">@string/home_country</string>
+    <string name="title_activity_documents">Documents</string>
+    <string name="title_activity_document_details">Document details</string>
+    <string name="title_activity_change_pin_code">ChangePinCodeActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_select_person">Family</string>
+    <string name="title_activity_manage_persons">Family Members</string>
+    <string name="title_activity_category_type_list">Document Type</string>
+    <string name="search">Search</string>
+    <string name="add_family_member">ADD FAMILY MEMBER</string>
+    <string name="delete_uc">DELETE</string>
+    <string name="delete_person_alert">Do you really want to delete this member? This will delete all his documents.</string>
+    <string name="delete_person_title">Delete member</string>
+
+    <!--Open Document-->
+    <string name="description_zoomlee_logo">Zoomlee logo</string>
+    <string name="description_document_icon">Document icon</string>
+    <string name="title_create_new_document">CREATE NEW DOCUMENT</string>
+    <string name="title_add_to_existing_doc">ADD TO EXISTING DOCUMENT</string>
+    <string name="title_cancel">CANCEL</string>
+    <string name="title_add_to_document">Add file to</string>
+    <string name="description_person_image">Person image</string>
+    <string name="title_edit_document">EDIT DOCUMENT</string>
+    <string name="description_person_for_document">Person for document</string>
+    <string name="description_selection_indicator">Item selection indicator</string>
+    <string name="message_empty_alerts">YOU HAVE NOT SET UP ANY ALERTS</string>
+    <string name="message_alerts_explanation">Let\'s set up your first alert so you can keep track and be notified of your document\'s expiration date</string>
+    <string name="task_affinity_open_in">.openin</string>
+    <string name="message_time_to_add_docs">Let\'s get started</string>
+    <string name="description_new_document">Create new document</string>
+    <string name="description_loading">Loading indicator</string>
+    <string name="description_menu_item">Menu item</string>
+    <string name="description_add_person">Add person</string>
+    <string name="message_empty_categories">YOU HAVE NOT UPLOADED ANY DOCUMENTS</string>
+    <string name="description_category_selected">Category selected</string>
+    <string name="description_delete_file">Delete file</string>
+    <string name="desription_image_from_gallery">Image from gallery</string>
+    <string name="description_select_image">Select image</string>
+    <string name="description_alert">Alert</string>
+    <string name="title_notes">notes</string>
+    <string name="title_tags">tags</string>
+    <string name="description_date_field">Date field</string>
+    <string name="description_delete">Delete</string>
+    <string name="title_logout">Logout</string>
+    <string name="description_add_tag">Add tag</string>
+    <string name="desription_delete_tag">Delete tag</string>
+    <string name="message_tag_deleted">Tag deleted</string>
+    <string name="message_field_deleted">Field deleted</string>
+    <string name="description_document_category">Document category</string>
+    <string name="title_no_tag">no tags</string>
+    <string name="message_already_have_tag">You already have this tag</string>
+    <string name="title_manage_tags">Manage Tags</string>
+    <string name="message_document_deleted">Document deleted</string>
+    <string name="description_manage_tags">Manage tags</string>
+    <string name="title_cannot_set_filter">Cannot Set Filter</string>
+    <string name="message_start_before_end">The start date should be before the end date.</string>
+
+    <!--Invite-->
+    <string name="title_invite_to_zoomlee">Invite to Zoomlee</string>
+    <string name="description_contact_image">Contact image</string>
+    <string name="title_invited">Invited</string>
+    <string name="title_invite">Invite</string>
+    <string name="title_joined">Joined</string>
+    <string name="error_invite_failed">Invite failed</string>
+    <string name="title_open_with">Open with</string>
+    <string name="title_install_to_open">Install to open</string>
+    <string name="title_cant_open_format">Can\'t open this %s file</string>
+    <string name="message_download_app">Please download an app that can open this file.</string>
+    <string name="description_app_icon">Application icon</string>
+    <string name="subscription_add_family">Add family members and\nstore their documents</string>
+
+    <!-- Subscription-->
+    <string name="family_month_cost">%1$s / MONTH</string>
+    <string name="family_year_cost">%1$s / YEAR</string>
+    <string name="try_for_free">TRY FOR FREE</string>
+    <string name="try_for_free_hint">for %1$s, then\n %2$s / month or %3$s / year</string>
+    <string name="you_are_subscribed">You are subscribed</string>
+    <string name="subscription_track_you_trips">Track your trips for Tax Reports</string>
+    <string name="subscription_immigration_forms">Immigration forms</string>
+    <string name="pro_month_cost">%1$s/MONTH</string>
+    <string name="pro_year_cost">%1$s/YEAR</string>
+    <string name="rsa_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgY/I+ogdQETkcPzaw/m4CZGWHD2tMTGC39vjPMmEvyesz8Xv+L79FPklB/2eiCsYZRqhRVOwYdU4K8qR1SwHJbKhhR9xWJAm+oC2qcxJT53UAZSML+UMnV4GFFDB5oM4ljPjwHOyzllsPBDT9L6lTLlw6WGyTvXvgHXn8eG8FFjPtggGWDe2mm/FWLZKhSvhtrE6+6JEsyQyOKnceir00fYbeaX6/kSURmK9zE5S6VU6+PRedp09QZ4zjMwAOaZGGQckoqh57G15qNzKHr5WqVGY4EZuR7as1BLhMF7RG/Xd1jN1PnJUz0DakAg8btjmPvh60g9B9GveFFGw9gfsDQIDAQAB</string>
+
+    <!--MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh1nZjnD8pZ6nvyejW2MVS+F3cy6K5ChQ+qReIq8bHawQiGpTJGYHxWCdjSyIbzIWpn/7hSA+WSQfI51ohMN3vMzu09ADnOJdEqkodiAphvVlWkq2YGeppup+blxsNWfBaTDBcio/ikiR4EQMAAijL5+06J0jl0LSesDmLkA9P/Ob4yETfXQ6wdbOkQLXmoL4ZLQVF0i/KLe1NbRHDLM6WJflf8ntVo7fCd6mg2UxFch20roBSlYtb81G8Pbg0/++izQp0TvUq1WGgnBZBx3EsidjaY+G6xuVKSSvKWYtxerBkNYzr2fh0bS9XYyj38IhNVYehfogi5BWVJkE1fYEKwIDAQAB-->
+
+    <!--MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh9ZSx+ylIrTuyxv/yjTbH6y5VKiN11I2sJckiiS8ECylMgiicqaes36sbImJKBOoewiHz6DRg+fT4+bZg+e2cHMkRSUn5aFCYOjjKgeuCR908vZehOKYTJQzRzZrp2Y6wQBt+dySU3fQ0efkQaljPMvr9QRI81AIVfyBZTkiHC+HZFsMkF0YcxJnu2g7rdGEVh/YmddEvW5BaR4YjCUS7AAb1eySc2qPBNyc29QQtN97XOTAATqZgCkLehjsBBN1/VvlEZCqByiLadD5li2wggSRzXKc1aeQwTygMkeR4RjKaJSvsJ51NPFzbiyP0A6aVSVZJ3rlhtik9eOWRYlnMwIDAQAB-->
+
+    <!--MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqMA6ZDnyHjj9Fcav6d/egMDh8FGrkGjJTt8ksxxyUVdX4x1nJYJ//Dm0cjQucWHAfu/GVTRjbN1wsEcozvhaTWO119/za9kGXoM7EfsDyWzvUHtNMQbAZo/c2wjHvffR+mj51v8Z5VYneOZjycYHvvulLEc9ED6ZUlVX1i1o/48sofcIrN/dyhn4abddKAxQfVNyt1dZx7zxEfu3Ff66qICT7AxHPPCnBOxlSErEmVerVolXzf/db9tDPqUjSFHIqyn1mc/qm+33GZleMCh/maBqNJz0G7Z/Ukn3DsXjTO12C0OdwonYxuYLDzRpX5kCHsYFAXVmjPUUtTzzKXm4sQIDAQAB-->
+
+    <!-- Incitation-->
+    <string name="incitation_select_home_country">Select your home country and Zoomlee will track your trips automatically</string>
+    <string name="incitation_invite_your_friends">Invite your friends to use Zoomlee as secure storage for the documents</string>
+    <string name="incitation_subscribe_to_zoomlee">Subscribe to Zoomlee Pro now and start traveling smarter</string>
+
+    <!-- Form-->
+    <string name="fill_form">Fill Form</string>
+    <string name="print">Print</string>
+    <string name="last_updated">last updated</string>
+
+    <!-- Create/Edit Tax-->
+    <string name="delete_trip">Delete trip</string>
+    <string name="tax_title">Trip</string>
+    <string name="track_automatically">Track automatically</string>
+    <string name="tracking">tracking…</string>
+    <string name="dates">Dates</string>
+    <string name="country">Country</string>
+    <string name="description_country">Country</string>
+    <string name="title_send_report">Send tax report\n(%d days total)</string>
+    <string name="you_have_arrived_to">You have arrived to %s</string>
+    <string name="you_have_left">You have left %s</string>
+    <string name="message_empty_trips">We’ll add all your trips here\nto help you track your taxes</string>
+    <string name="title_empty_trips">You have no trips</string>
+    <string name="title_tax_tracking">Tax Tracking</string>
+    <string name="tax_report">Tax Report</string>
+    <string name="message_cant_open_file">Can\'t open this file</string>
+    <string name="title_renew_subscription">Renew Subscription</string>
+    <string name="description_ok">Ok</string>
+    <string name="description_cancel">Cancel</string>
+
+    <!-- Edit Form-->
+    <string name="description_of_Articles">Description of Articles</string>
+    <string name="value">Value</string>
+    <string name="description_of_articles_activity">Description of articles</string>
+    <string name="form_family_name">Family name</string>
+    <string name="form_first_name">First (given) name</string>
+    <string name="form_middle_name">Middle name</string>
+    <string name="form_birth_date">Birth date</string>
+    <string name="form_family_members">Number of family members traveling with you</string>
+    <string name="form_us_street_address">U.S. street address (hotel name/destination)</string>
+    <string name="form_city">City</string>
+    <string name="form_state">State</string>
+    <string name="form_passport_issued_by">Passport issued by (country)</string>
+    <string name="form_passport_number">Passport number</string>
+    <string name="form_country_of_residence">Country of residence</string>
+    <string name="form_countries_visited">Countries visited on this trip prior to U.S. arrival</string>
+    <string name="form_flight_no">Airline/Flight No. or Vessel Name</string>
+    <string name="form_primary_purpose">The primary purpose of this trip is business:</string>
+    <string name="form_i_am_bringing">I am (We are) bringing</string>
+    <string name="form_fruits">fruits, vegetables, plants, seeds, food, insects</string>
+    <string name="form_meets">meats, animals, animal/wildlife products</string>
+    <string name="form_snails">disease agents, cell cultures, snails</string>
+    <string name="form_soil">soil or have been on a farm/ranch/pasture</string>
+    <string name="form_livestock_body">(such as touching or handling)</string>
+    <string name="form_livestock_title">I have (We have) been in close proximity of livestock</string>
+    <string name="form_currency">I am (We are) carrying currency or monetary instruments over $10,000 U.S. or foreign equivalent</string>
+    <string name="form_merchandise">I have (We have) commercial merchandise</string>
+    <string name="form_residents">Residents</string>
+    <string name="form_residents_full">the total value of all goods, including commercial merchandise I/we have purchased or acquired abroad, (including gifts for someone else but not items mailed to the U.S.) and am/are bringing to the U.S. is ($)</string>
+    <string name="form_visitors">Visitors</string>
+    <string name="form_visitors_full">the total value of all articles that will remain in the U.S., including commercial nerchandise is ($)</string>
+    <string name="title_fill_form">FILL FORM</string>
+    <string name="title_print_form">PRINT FORM</string>
+    <string name="title_ms_office">Microsoft Office Mobile</string>
+    <string name="title_loading">Loading</string>
+
+</resources>

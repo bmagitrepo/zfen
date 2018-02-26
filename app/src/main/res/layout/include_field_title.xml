@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zoomlee.zoo.ui.view.ZMTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/titleTv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/outer_field_margin"
+    android:textColor="@color/text_empty"
+    android:textSize="@dimen/text_small"
+    app:font="@string/font_light"
+    android:singleLine="true"
+    tools:showIn="@layout/view_field_text" />

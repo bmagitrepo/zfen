@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_flipper_height">
+
+        <com.zoomlee.zoo.ui.view.AttachmentView
+            android:id="@+id/supportView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.zoomlee.zoo.ui.view.AttachmentView
+            android:id="@+id/visibleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewFlipper>
+
+    <LinearLayout
+        android:id="@+id/switchButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/divider_color" />
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selectable_item_background"
+    android:layout_marginBottom="@dimen/outer_field_margin"
+    tools:showIn="@layout/view_field_date">
+
+    <TextView
+        android:id="@+id/valueTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="12dp"
+        android:paddingTop="@dimen/inner_field_space"
+        android:singleLine="true"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_large"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical" />
+
+    <View
+        style="@style/HorizontalSeparator"
+        android:layout_gravity="bottom" />
+
+    <ImageView
+        android:contentDescription="@string/description_date_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/date_picker_triangle" />
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zoomlee.zoo.ui.view.selectdocument.SelectDocumentItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="75dp">
+
+    <com.zoomlee.zoo.ui.view.DocumentIconView
+        android:id="@+id/document_icon"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_document_name"
+        style="@style/ItemSelect"
+        tools:text="OTHER"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</com.zoomlee.zoo.ui.view.selectdocument.SelectDocumentItemView>

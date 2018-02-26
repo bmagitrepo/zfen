@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zoomlee.zoo.ui.view.CheckableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listItemContainer"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <com.zoomlee.zoo.ui.view.ZMTextView
+        android:id="@+id/nameTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="72dp"
+        android:singleLine="true"
+        android:paddingRight="@dimen/horizontal_margin"
+        android:duplicateParentState="true"
+        android:background="@drawable/checkable_background"
+        android:drawablePadding="@dimen/horizontal_margin"
+        android:drawableRight="@drawable/checkable_box"
+        android:layout_gravity="center_vertical"
+        app:font="@string/font_bold"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_large" />
+
+    <ImageView
+        android:contentDescription="@string/description_person_image"
+        android:id="@+id/iconIv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="center_vertical|left"
+        android:src="@drawable/person_me" />
+</com.zoomlee.zoo.ui.view.CheckableFrameLayout>

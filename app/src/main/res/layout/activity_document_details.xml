@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_content"
+    android:theme="@style/Widget.Styled.ScrollView"
+    android:visibility="invisible"
+    tools:context="com.zoomlee.zoo.ui.activity.DocumentDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_document" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/divider_color" />
+
+        <com.zoomlee.zoo.ui.view.ImageFlipper
+            android:id="@+id/imageFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <com.zoomlee.zoo.ui.view.ZMButton
+            android:id="@+id/editDocument"
+            app:font="@string/font_medium"
+            style="@style/Button.White"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/button_height_small"
+            android:layout_marginBottom="48dp"
+            android:layout_marginTop="48dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title_edit_document"
+            android:textColor="@color/green_zoomlee" />
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,244 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_splash_cover" />
+
+    <include layout="@layout/toolbar_cancel_ok" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/Widget.Styled.ScrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp"
+            android:paddingTop="9dp">
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/familyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hide_title="true"
+                app:title="@string/form_family_name" />
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hide_title="true"
+                app:title="@string/form_first_name" />
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/middleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hide_title="true"
+                app:title="@string/form_middle_name" />
+
+            <com.zoomlee.zoo.ui.view.field.FieldDateEditView
+                android:id="@+id/birthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:date_format="MMMM d, yyyy"
+                app:no_alert="true"
+                app:title="@string/form_birth_date" />
+
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/familyNumbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="49dp"
+                app:hide_title="true"
+                app:title="@string/form_family_members" />
+
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/usStreetAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                app:hide_title="true"
+                app:title="@string/form_us_street_address" />
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hide_title="true"
+                app:title="@string/form_city" />
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hide_title="true"
+                app:title="@string/form_state" />
+
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/passportIssuedBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hide_title="true"
+                app:title="@string/form_passport_issued_by" />
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/passportNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hide_title="true"
+                app:title="@string/form_passport_number" />
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/countryOfResidence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hide_title="true"
+                app:title="@string/form_country_of_residence" />
+
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/countriesVisited"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                app:hide_title="true"
+                app:title="@string/form_countries_visited" />
+
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/flightNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                app:hide_title="true"
+                app:title="@string/form_flight_no" />
+
+
+            <com.zoomlee.zoo.ui.view.field.FieldToggleView
+                android:id="@+id/primaryPurpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:header="@string/form_primary_purpose" />
+
+            <com.zoomlee.zoo.ui.view.ZMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:paddingLeft="@dimen/horizontal_margin"
+                android:text="@string/form_i_am_bringing"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_large"
+                app:font="@string/font_bold" />
+
+
+            <com.zoomlee.zoo.ui.view.field.FieldToggleView
+                android:id="@+id/fruitsTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/form_fruits" />
+
+            <com.zoomlee.zoo.ui.view.field.FieldToggleView
+                android:id="@+id/meetsTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/form_meets" />
+
+            <com.zoomlee.zoo.ui.view.field.FieldToggleView
+                android:id="@+id/snailsTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/form_snails" />
+
+            <com.zoomlee.zoo.ui.view.field.FieldToggleView
+                android:id="@+id/soilTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/form_soil" />
+
+
+            <com.zoomlee.zoo.ui.view.field.FieldToggleView
+                android:id="@+id/livestockTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:body="@string/form_livestock_body"
+                app:header="@string/form_livestock_title" />
+
+
+            <com.zoomlee.zoo.ui.view.field.FieldToggleView
+                android:id="@+id/currencyTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:header="@string/form_currency" />
+
+
+            <com.zoomlee.zoo.ui.view.field.FieldToggleView
+                android:id="@+id/merchandiseTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:header="@string/form_merchandise" />
+
+
+            <com.zoomlee.zoo.ui.view.ZMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:paddingLeft="@dimen/horizontal_margin"
+                android:text="@string/form_residents"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_large"
+                app:font="@string/font_regular" />
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/residents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                app:title="@string/form_residents_full"
+                app:title_single_line="false" />
+
+
+            <com.zoomlee.zoo.ui.view.ZMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:paddingLeft="@dimen/horizontal_margin"
+                android:text="@string/form_visitors"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_large"
+                app:font="@string/font_regular" />
+
+            <com.zoomlee.zoo.ui.view.field.FieldTextEditView
+                android:id="@+id/visitors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="-10dp"
+                app:title="@string/form_visitors_full"
+                app:title_single_line="false" />
+
+            <include layout="@layout/include_separator_content_frame" />
+
+            <TextView
+                android:id="@+id/descriptionOfArticles"
+                style="@style/ContentFrameText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/description_of_Articles" />
+
+            <include layout="@layout/include_separator_content_frame" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

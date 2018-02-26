@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zoomlee.zoo.ui.view.ZMTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/button_height"
+    android:background="@drawable/checkable_background"
+    android:drawableRight="@drawable/checkable_box"
+    android:gravity="center_vertical"
+    android:textColor="@color/text_gray"
+    android:textSize="@dimen/text_large"
+    android:paddingLeft="@dimen/horizontal_margin"
+    android:paddingRight="@dimen/horizontal_margin" />

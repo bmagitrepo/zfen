@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/dialog_date_range">
+
+    <View
+        android:id="@+id/anchorView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+    <View
+        android:id="@+id/view_selected_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_centerVertical="true" />
+
+    <com.zoomlee.zoo.ui.view.wheel.WheelView
+        android:id="@+id/month"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/anchorView" />
+
+    <com.zoomlee.zoo.ui.view.wheel.WheelView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/anchorView" />
+
+    <com.zoomlee.zoo.ui.view.wheel.WheelView
+        android:id="@+id/day"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+</merge>

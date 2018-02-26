@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_content"
+    android:orientation="vertical">
+
+    <com.zoomlee.zoo.ui.view.ZMButton
+        android:id="@+id/addFile"
+        style="@style/Button.Orange"
+        app:font="@string/font_medium"
+        android:layout_height="@dimen/button_height_small"
+        android:layout_width="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/button_height"
+        android:layout_marginBottom="@dimen/button_height"
+        android:text="@string/add"
+        android:textAllCaps="true" />
+</FrameLayout>

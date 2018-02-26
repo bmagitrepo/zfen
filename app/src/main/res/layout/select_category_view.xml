@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zoomlee.zoo.ui.view.selectcategory.SelectCategoryView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_category_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/include_empty_categories"
+        android:id="@+id/text_empty_categories" />
+
+    <include
+        layout="@layout/include_complex_divider_list"
+        android:id="@+id/list_items" />
+</com.zoomlee.zoo.ui.view.selectcategory.SelectCategoryView>

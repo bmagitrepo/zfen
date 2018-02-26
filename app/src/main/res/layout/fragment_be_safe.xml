@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zoomlee.zoo.ui.fragments.BeSafeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/green_zoomlee"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ToggleButton
+            android:id="@+id/policeTb"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/be_safe_toggle_button"
+            android:textAllCaps="false"
+            android:textColor="@color/be_safe_toggle_button_text_color"
+            android:textOff="@string/police"
+            android:textOn="@string/police" />
+
+        <ToggleButton
+            android:id="@+id/hospitalTb"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/be_safe_toggle_button"
+            android:textAllCaps="false"
+            android:textColor="@color/be_safe_toggle_button_text_color"
+            android:textOff="@string/hospital"
+            android:textOn="@string/hospital" />
+
+        <ToggleButton
+            android:id="@+id/consulateTb"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/be_safe_toggle_button"
+            android:textAllCaps="false"
+            android:textColor="@color/be_safe_toggle_button_text_color"
+            android:textOff="@string/consulate"
+            android:textOn="@string/consulate" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <com.zoomlee.zoo.ui.view.PlaceInfoView
+            android:id="@+id/placeInfoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

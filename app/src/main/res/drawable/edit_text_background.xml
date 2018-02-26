@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <selector>
+        <!--normal-->
+        <item
+            android:state_pressed="false"
+            android:state_focused="false">
+            <nine-patch android:src="@drawable/textfield_normal" />
+        </item>
+        <!--error-->
+        <item app:state_error="true">
+            <nine-patch android:src="@drawable/textfield_error" />
+        </item>
+        <!--activated-->
+        <item>
+            <nine-patch android:src="@drawable/textfield_focused" />
+        </item>
+    </selector>
+</inset>

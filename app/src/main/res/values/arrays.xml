@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timer_names">
+        <item>Never</item>
+        <item>7 days before</item>
+        <item>30 days before</item>
+        <item>6 months before</item>
+        <item>1 year before</item>
+    </string-array>
+    <integer-array name="timer_values">
+        <item>-1</item>
+        <item>604800</item>
+        <item>2592000</item>
+        <item>15811200</item>
+        <item>31536000</item>
+    </integer-array>
+    <string-array name="renew_options">
+        <item>Renew</item>
+        <item>Don\'t ask me again</item>
+        <item>Remind me later</item>
+    </string-array>
+</resources>

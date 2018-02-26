@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "83382105316",
+    "firebase_url": "https://zootest-4c5c4.firebaseio.com",
+    "project_id": "zootest-4c5c4",
+    "storage_bucket": "zootest-4c5c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83382105316:android:1e5d69abd03c588f",
+        "android_client_info": {
+          "package_name": "com.zoomlee.zoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83382105316-jc5bubhjfv6r0g1prcb18hfrstfo13eg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtTNE-3MBL7nFGrmJ3QngVzswtBWEYDUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

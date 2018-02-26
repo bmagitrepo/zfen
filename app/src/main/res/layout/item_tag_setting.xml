@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/button_height">
+
+    <com.zoomlee.zoo.ui.view.ZMEditText
+        android:id="@+id/editTagView"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:layout_marginRight="40dp"
+        android:paddingRight="40dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_tag"
+        android:textColor="@color/text_gray"
+        android:inputType="textNoSuggestions"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large" />
+
+    <ImageView
+        android:contentDescription="@string/description_delete"
+        android:id="@+id/deleteTagBtn"
+        android:layout_width="@dimen/button_height_small"
+        android:layout_height="@dimen/button_height_small"
+        android:scaleType="center"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/delete_tag" />
+
+    <TextView
+        android:id="@+id/docCountTv"
+        android:layout_marginRight="58dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="bottom|right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_hint"
+        android:text="@string/description_delete"
+        android:textSize="@dimen/text_normal" />
+</FrameLayout>

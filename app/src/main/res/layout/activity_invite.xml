@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_content"
+    tools:context="com.zoomlee.zoo.ui.activity.CategoryTypeListActivity">
+
+    <com.zoomlee.zoo.ui.view.LoadingView
+        android:id="@+id/loading_view"
+        android:layout_width="@dimen/loading_spinner_width"
+        android:layout_height="@dimen/loading_spinner_height"
+        android:layout_gravity="center" />
+
+    <com.zoomlee.zoo.ui.view.ComplexDividerListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        app:dividerColor="@color/divider_color"
+        app:thickHeight="3dp"
+        app:thickPadding="72dp"
+        app:thickWidth="14dp"
+        app:thinHeight="1dp" />
+
+    <include layout="@layout/include_empty_view" />
+</FrameLayout>

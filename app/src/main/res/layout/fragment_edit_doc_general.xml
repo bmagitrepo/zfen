@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Widget.Styled.ScrollView"
+    tools:context="com.zoomlee.zoo.ui.fragments.EditDocGeneralFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            style="@style/ContentFrameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:text="@string/document_name"
+            app:font="@string/font_medium" />
+
+        <com.zoomlee.zoo.ui.view.ZMEditText
+            android:id="@+id/documentNameEt"
+            style="@style/ContentFrameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_marginTop="@dimen/horizontal_margin" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            style="@style/ContentFrameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_and_type"
+            app:font="@string/font_medium" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <LinearLayout
+            android:id="@+id/categoryType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectable_item_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/categoryTypeIv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="@dimen/horizontal_margin" />
+
+            <TextView
+                android:id="@+id/categoryTypeTv"
+                style="@style/ContentFrameText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            style="@style/ContentFrameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/family_member"
+            app:font="@string/font_medium" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <LinearLayout
+            android:id="@+id/changePerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectable_item_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/personAvatarIv"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:contentDescription="@string/description_person_for_document" />
+
+            <TextView
+                android:id="@+id/personNameTv"
+                style="@style/ContentFrameText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@null"
+                android:singleLine="true"
+
+                tools:text="Jane" />
+        </LinearLayout>
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <com.zoomlee.zoo.ui.view.ColorPickerView
+            android:id="@+id/colorPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_marginTop="@dimen/button_height"
+            android:layout_marginBottom="@dimen/button_height"  />
+
+        <com.zoomlee.zoo.ui.view.ZMEditText
+            android:id="@+id/notesEt"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_height"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:hint="@string/write_your_notes_here"
+            android:inputType="textMultiLine|textCapSentences"
+            android:singleLine="false"
+            android:textColor="@color/text_gray"
+            android:textColorHint="@color/text_hint" />
+
+        <com.zoomlee.zoo.ui.view.ZMButton
+            android:id="@+id/deleteDocument"
+            style="@style/Button.White"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/button_height_small"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/button_height"
+            android:text="@string/delete_document_uc"
+            app:font="@string/font_medium" />
+    </LinearLayout>
+</ScrollView>

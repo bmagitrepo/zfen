@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nav_drawer_bg"
+    android:clickable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/personContainerScroll"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scrollbars="none"
+        android:theme="@style/Widget.Styled.ScrollView">
+
+        <LinearLayout
+            android:id="@+id/personContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+
+            <include
+                android:id="@+id/addPerson"
+                layout="@layout/include_person_view" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <include
+        layout="@layout/include_menu_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:layout_marginRight="@dimen/horizontal_margin"
+        android:layout_marginTop="0dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.zoomlee.zoo.ui.view.NavigationDrawerItemView
+                android:id="@+id/documentsMi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/selectable_item_background"
+                app:itemIcon="@drawable/ic_menu_documents"
+                app:text="@string/documents" />
+
+            <com.zoomlee.zoo.ui.view.NavigationDrawerItemView
+                android:id="@+id/tagsMi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/selectable_item_background"
+                app:itemIcon="@drawable/ic_menu_tags"
+                app:text="@string/tags" />
+
+            <com.zoomlee.zoo.ui.view.NavigationDrawerItemView
+                android:id="@+id/formsMi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/selectable_item_background"
+                app:itemIcon="@drawable/ic_menu_forms"
+                app:text="@string/forms" />
+
+            <com.zoomlee.zoo.ui.view.NavigationDrawerItemView
+                android:id="@+id/notificationsMi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/selectable_item_background"
+                app:itemIcon="@drawable/ic_menu_notifications"
+                app:text="@string/notifications" />
+
+            <include layout="@layout/include_menu_divider" />
+
+            <com.zoomlee.zoo.ui.view.NavigationDrawerItemView
+                android:id="@+id/myTripsMi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/selectable_item_background"
+                app:itemIcon="@drawable/ic_menu_trips"
+                app:text="@string/my_trips" />
+
+            <com.zoomlee.zoo.ui.view.NavigationDrawerItemView
+                android:id="@+id/beSafeMi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/selectable_item_background"
+                app:itemIcon="@drawable/ic_menu_be_safe"
+                app:text="@string/be_safe" />
+
+            <com.zoomlee.zoo.ui.view.NavigationDrawerItemView
+                android:id="@+id/settingsMi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/selectable_item_background"
+                app:itemIcon="@drawable/ic_menu_settings"
+                app:text="@string/settings" />
+
+            <com.zoomlee.zoo.ui.view.NavigationDrawerItemView
+                android:id="@+id/communityMi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/selectable_item_background"
+                app:itemIcon="@drawable/ic_menu_community"
+                app:text="@string/community" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.zoomlee.zoo.ui.view.AnyProgressView
+        android:id="@+id/progress_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:progressFrame="@drawable/progress_frame"
+        app:timeDelta="10"
+        app:xDelta="1" />
+</LinearLayout>

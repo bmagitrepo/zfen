@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="google_maps_key_instructions">
+        <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=06:09:EA:BE:E0:C6:21:C0:2A:B3:9E:D0:D6:D9:E6:2F:BF:05:86:1F%3Bcom.zoomlee.Zoomlee.ui
+
+    You can also add your credentials to an existing key, using this line:
+    06:09:EA:BE:E0:C6:21:C0:2A:B3:9E:D0:D6:D9:E6:2F:BF:05:86:1F;com.zoomlee.Zoomlee.ui
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+        -->
+    </string>
+    <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyAy9hedwU-Q9mUCDaw3JGHRfB4EwdA7tcg</string>
+
+</resources>

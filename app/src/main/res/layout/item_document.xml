@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zoomlee.zoo.ui.view.DocumentItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/divider_color">
+
+    <LinearLayout
+        android:id="@+id/layout_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/button_manage_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/document_action_padding"
+                    android:layout_marginRight="@dimen/document_action_padding"
+                    android:contentDescription="@string/description_manage_tags"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/circle_manage_tags" />
+
+                <com.zoomlee.zoo.ui.view.ZMTextView
+                    android:id="@+id/text_manage_tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="@string/title_manage_tags"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_small"
+                    app:font="@string/font_light" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/document_action_padding"
+                    android:layout_marginRight="@dimen/document_action_padding"
+                    android:contentDescription="@string/description_delete"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/circle_delete" />
+
+                <com.zoomlee.zoo.ui.view.ZMTextView
+                    android:id="@+id/text_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="@string/title_delete"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_small"
+                    app:font="@string/font_light" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_content"
+        android:minHeight="86dp"
+        android:orientation="horizontal">
+
+        <com.zoomlee.zoo.ui.view.DocumentIconView
+            android:id="@+id/document_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:imagePadding="18dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/alertIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/fields_layout"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/description_alert"
+                android:paddingBottom="13dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/alert" />
+
+            <LinearLayout
+                android:id="@+id/layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:layout_marginRight="@dimen/horizontal_margin"
+                android:layout_marginTop="19dp"
+                android:orientation="horizontal">
+
+                <com.zoomlee.zoo.ui.view.ZMTextView
+                    android:id="@+id/docNameTv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_large"
+                    app:font="@string/font_bold"
+                    tools:text="DOM" />
+
+                <ImageView
+                    android:id="@+id/personIconIv"
+                    android:layout_width="@dimen/doc_details_owner_icon_size"
+                    android:layout_height="@dimen/doc_details_owner_icon_size"
+                    android:layout_marginLeft="@dimen/horizontal_margin"
+                    android:contentDescription="@string/description_person_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/fields_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/layout_name"
+                android:layout_below="@id/layout_name"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/horizontal_margin">
+
+                <com.zoomlee.zoo.ui.view.field.FieldsTableView
+                    android:id="@+id/fieldsTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="1" />
+
+                <com.zoomlee.zoo.ui.view.field.FieldView
+                    android:id="@+id/tagsField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/table_row_bottom_margin"
+                    android:visibility="gone" />
+
+                <com.zoomlee.zoo.ui.view.field.FieldView
+                    android:id="@+id/notesField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/table_row_bottom_margin"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.zoomlee.zoo.ui.view.DocumentItemView>

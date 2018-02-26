@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:contentDescription="@string/description_select_image"
+    android:layout_width="@dimen/picker_picture_size"
+    android:layout_height="@dimen/picker_picture_size"
+    android:layout_margin="@dimen/picker_margin"
+    android:layout_weight="1"
+    android:background="#a8000000"
+    android:scaleType="center"
+    android:src="@drawable/add_picture"
+    android:visibility="invisible"
+    tools:showIn="@layout/fragment_image_picker" />

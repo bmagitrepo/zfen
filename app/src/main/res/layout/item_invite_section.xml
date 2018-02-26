@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zoomlee.zoo.ui.view.ZMTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nameTv"
+    style="@style/ItemSection"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/button_height"
+    android:layout_gravity="top"
+    android:textAllCaps="false"
+    app:font="@string/font_medium" />

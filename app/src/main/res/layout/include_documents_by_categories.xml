@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_categories">
+
+    <FrameLayout
+        android:id="@+id/listLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@android:id/list"
+            layout="@layout/include_complex_divider_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clipToPadding="false" />
+
+        <LinearLayout
+            android:id="@+id/noDataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="72dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:visibility="gone">
+
+            <include layout="@layout/include_empty_categories" />
+
+            <com.zoomlee.zoo.ui.view.ZMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/message_time_to_add_docs"
+                android:textColor="@color/text_empty"
+                android:textSize="@dimen/text_small"
+                app:font="@string/font_light" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <include layout="@layout/include_add_action_button" />
+</merge>

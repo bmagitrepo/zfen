@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <ImageView
+        android:id="@+id/countryIcon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:contentDescription="@string/description_country"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/layout_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/horizontal_margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            android:id="@+id/tripDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_light_grey"
+            android:textSize="30sp"
+            app:font="@string/font_bold"
+            tools:text="60" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            android:id="@+id/text_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="72dp"
+        android:layout_toLeftOf="@id/layout_days"
+        android:orientation="vertical">
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            android:id="@+id/countryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_large"
+            app:font="@string/font_bold"
+            tools:text="Australia" />
+
+        <include layout="@layout/include_item_vertical_space" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            android:id="@+id/tripRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_empty"
+            android:textSize="@dimen/text_small"
+            tools:text="Feb 12 - Mar 15" />
+    </LinearLayout>
+</RelativeLayout>

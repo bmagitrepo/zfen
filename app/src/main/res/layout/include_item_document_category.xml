@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/categories_doc_list_item">
+
+    <TextView
+        android:id="@+id/alertsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/updates_icon_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/updates_background"
+        android:gravity="center"
+        android:minWidth="@dimen/updates_icon_width"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/dark_orange"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/dragAndDropIv"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/drag_icon"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/alertsTv"
+        android:orientation="vertical"
+        android:paddingLeft="72dp">
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            android:id="@+id/categoryNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_large"
+            app:font="@string/font_bold"
+            tools:text="TRAVfffffffffffffffffffffffffEL"
+            tools:textColor="#fff" />
+
+        <include layout="@layout/include_item_vertical_space" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            android:id="@+id/docsTypesTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:singleLine="true"
+            android:textColor="@color/text_empty"
+            android:textSize="@dimen/text_small"
+            tools:text="Visa" />
+    </LinearLayout>
+</merge>

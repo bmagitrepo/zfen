@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zoomlee.zoo.ui.view.ZMTextView
+        android:id="@+id/addToNew"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selectable_item_background"
+        android:drawableLeft="@drawable/ic_new_document"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/create_document"
+        android:textColor="@color/text_4d"
+        android:textSize="@dimen/text_large" />
+
+
+    <com.zoomlee.zoo.ui.view.ZMTextView
+        android:id="@+id/addToExist"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selectable_item_background"
+        android:drawableLeft="@drawable/ic_add_to_document"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="11dp"
+        android:text="@string/add_to_existing"
+        android:textColor="@color/text_4d"
+        android:textSize="@dimen/text_large" />
+</LinearLayout>

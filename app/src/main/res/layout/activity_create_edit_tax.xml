@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_splash_cover" />
+
+    <include layout="@layout/toolbar_cancel_ok" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_content"
+            android:theme="@style/Widget.Styled.ScrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zoomlee.zoo.ui.view.ZMTextView
+                    android:id="@+id/countryTitle"
+                    style="@style/ContentFrameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/horizontal_margin"
+                    android:text="@string/country"
+                    app:font="@string/font_medium" />
+
+                <include layout="@layout/include_separator_content_frame" />
+
+                <TextView
+                    android:id="@+id/country"
+                    style="@style/ContentFrameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height" />
+
+                <include layout="@layout/include_separator_content_frame" />
+
+                <com.zoomlee.zoo.ui.view.ZMTextView
+                    android:id="@+id/datesTitle"
+                    style="@style/ContentFrameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dates"
+                    app:font="@string/font_medium" />
+
+                <include layout="@layout/include_separator_content_frame" />
+
+                <com.zoomlee.zoo.ui.view.TaxDateView
+                    android:id="@+id/arrivalDateView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:name="Arrival" />
+
+                <com.zoomlee.zoo.ui.view.TaxDateView
+                    android:id="@+id/departureDateView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="48dp"
+                    app:name="Departure" />
+
+                <LinearLayout
+                    android:id="@+id/trackAutoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="38dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <com.zoomlee.zoo.ui.view.ZMButton
+                        android:id="@+id/stopAutoTracking"
+                        style="@style/Button.White"
+                        android:layout_width="180dp"
+                        android:layout_height="@dimen/button_height_small"
+                        android:layout_gravity="center_horizontal"
+                        android:text="STOP AUTO-TRACKING"
+                        android:textAllCaps="true"
+                        app:font="@string/font_medium" />
+
+                    <com.zoomlee.zoo.ui.view.ZMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="4dp"
+                        android:text="The app will stop tracking\nyour departure for this trip"
+                        android:textColor="@color/text_empty"
+                        android:textSize="@dimen/text_small"
+                        app:font="@string/font_light" />
+                </LinearLayout>
+
+                <com.zoomlee.zoo.ui.view.ZMButton
+                    android:id="@+id/deleteTax"
+                    style="@style/Button.White"
+                    android:layout_width="180dp"
+                    android:layout_height="@dimen/button_height_small"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="48dp"
+                    android:text="@string/delete_trip"
+                    android:textAllCaps="true"
+                    app:font="@string/font_medium" />
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/include_toolbar_shadow" />
+    </FrameLayout>
+</LinearLayout>

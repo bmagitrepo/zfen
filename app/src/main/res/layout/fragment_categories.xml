@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_documents_by_categories" />
+
+    <com.zoomlee.zoo.ui.view.LoadingView
+        android:id="@+id/loading"
+        android:layout_width="@dimen/loading_spinner_width"
+        android:layout_height="@dimen/loading_spinner_height"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

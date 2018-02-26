@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zoomlee.zoo.ui.view.ZMTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nameTv"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    app:font="@string/font_bold"
+    android:paddingLeft="@dimen/horizontal_margin"
+    android:paddingRight="@dimen/horizontal_margin"
+    android:background="@drawable/checkable_background"
+    android:drawableRight="@drawable/checkable_box"
+    android:drawablePadding="@dimen/horizontal_margin"
+    android:gravity="center_vertical"
+    android:textAllCaps="true"
+    android:layout_marginBottom="-1dp"
+    android:textColor="@color/text_gray"
+    android:textSize="@dimen/text_large" />

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_content"
+    tools:context="com.zoomlee.zoo.ui.fragments.dialog.ImagePickerFragment">
+
+    <FrameLayout
+        android:id="@+id/imagesFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/picker_margin"
+            android:orientation="horizontal">
+
+            <include
+                layout="@layout/include_image_for_picker"
+                android:id="@+id/pictureView1" />
+
+            <include
+                layout="@layout/include_image_for_picker"
+                android:id="@+id/pictureView2" />
+
+            <include
+                layout="@layout/include_image_for_picker"
+                android:id="@+id/pictureView3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/picker_margin"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/maskView1"
+                layout="@layout/include_picker_add_mask" />
+
+            <include
+                android:id="@+id/maskView2"
+                layout="@layout/include_picker_add_mask" />
+
+            <include
+                android:id="@+id/maskView3"
+                layout="@layout/include_picker_add_mask" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View style="@style/HorizontalSeparator" />
+
+    <TextView
+        android:id="@+id/camera"
+        android:drawableLeft="@drawable/ic_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/take_photo"
+        style="@style/PickerChoice" />
+
+    <TextView
+        android:id="@+id/gallery"
+        android:drawableLeft="@drawable/ic_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/PickerChoice"
+        android:text="@string/choose_from_gallery" />
+</LinearLayout>

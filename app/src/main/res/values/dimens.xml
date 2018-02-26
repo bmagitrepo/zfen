@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="navigation_drawer_width">320dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+
+    <!--general-->
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_normal">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_huge">20sp</dimen>
+    <dimen name="button_height_small">40dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="edit_text_line_height">1dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    
+    <dimen name="white_btn_margin">30dp</dimen>
+    <dimen name="divider_ninepatch_height">3dp</dimen>
+
+    <dimen name="loading_spinner_width">40dp</dimen>
+    <dimen name="loading_spinner_height">40dp</dimen>
+
+    <dimen name="pin_item_diameter">12dp</dimen>
+    <dimen name="color_item_diameter">40dp</dimen>>
+
+    <dimen name="set_pin_dot_radius">6dp</dimen>
+
+    <dimen name="createpin_view_width">50dp</dimen>
+    <dimen name="createpin_view_height">50dp</dimen>
+
+    <!-- Image Picker -->
+    <dimen name="picker_picture_size">100dp</dimen>
+    <dimen name="picker_margin">8dp</dimen>
+
+    <dimen name="pinbutton_size">58dp</dimen>
+    <dimen name="pinbutton_margin">10dp</dimen>
+
+    <!-- NavDrawer -->
+    <dimen name="updates_icon_width">26dp</dimen>
+    <dimen name="updates_icon_height">26dp</dimen>
+
+    <!--DocumentsActivity-->
+    <dimen name="table_row_bottom_margin">17dp</dimen>
+    <dimen name="table_cell_margin">4dp</dimen>
+
+    <!-- Create/Edit Activity -->
+    <dimen name="tab_layout_horizontal_padding">32dp</dimen>
+    <dimen name="search_view_horizontal_padding">32dp</dimen>
+
+
+    <!--DocumentDetailsActivity-->
+    <dimen name="radio_btn_left_margin">1dp</dimen>
+    <dimen name="radio_btn_full_size">16dp</dimen>
+    <dimen name="radio_btn_padding">4dp</dimen>
+    <dimen name="radio_btn_size">8dp</dimen>
+    <dimen name="other_file_icon_width">56dp</dimen>
+    <dimen name="other_file_icon_height">62dp</dimen>
+    <dimen name="error_doc_icon_width">65dp</dimen>
+    <dimen name="error_doc_icon_height">71dp</dimen>
+    <dimen name="file_item_height">204dp</dimen>
+    <dimen name="doc_details_owner_icon_size">30dp</dimen>
+
+    <!--Passcode-->
+    <dimen name="passcode_text_size">34sp</dimen>
+    <dimen name="passcode_circle_radius">6dp</dimen>
+    <dimen name="passcode_width">128dp</dimen>
+    <dimen name="passcode_x_start">10dp</dimen>
+    <dimen name="passcode_y_start">30dp</dimen>
+    <dimen name="passcode_text_y">17dp</dimen>
+
+    <!-- Documents -->
+    <dimen name="view_flipper_height">@dimen/file_item_height</dimen>
+
+    <!--Open Document-->
+    <dimen name="select_item_height">56dp</dimen>
+    <dimen name="select_category_image_padding">4dp</dimen>
+    <dimen name="inner_field_space">10dp</dimen>
+    <dimen name="outer_field_margin">10dp</dimen>
+
+    <dimen name="avatar_width">30dp</dimen>
+    <dimen name="avatar_height">30dp</dimen>
+    <dimen name="ab_avatar_margin_left">13dp</dimen>
+    <dimen name="hiding_divider_height">44dp</dimen>
+    <dimen name="document_action_size">40dp</dimen>
+    <dimen name="document_action_padding">20dp</dimen>
+    <dimen name="subscribe_btn_width">130dp</dimen>
+    <dimen name="subscribe_btn_height">40dp</dimen>
+
+    <dimen name="range_picker_height">216dp</dimen>
+
+    <dimen name="date_wheel_view_height">210dp</dimen>
+
+    <dimen name="toggle_btn_width">54dp</dimen>
+    <dimen name="toggle_btn_height">36dp</dimen>
+    <dimen name="form_fields_group_margin">21dp</dimen>
+    <dimen name="ok_bar_half_space">4dp</dimen>
+</resources>

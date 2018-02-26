@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zoomlee.zoo.ui.view.selectperson.SelectPersonView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/select_person_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_add_to_document">
+
+    <include
+        layout="@layout/include_complex_divider_list"
+        android:id="@+id/list_items" />
+</com.zoomlee.zoo.ui.view.selectperson.SelectPersonView>

@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zoomlee.zoo.ui.fragments.MyTripsFragment">
+
+    <com.zoomlee.zoo.ui.view.EmptyView
+        android:id="@+id/empty_taxes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_content"
+        app:textMessage="@string/message_empty_trips"
+        app:textTitle="@string/title_empty_trips" />
+
+    <com.zoomlee.zoo.ui.view.ComplexDividerListView
+        android:id="@+id/taxesView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_content"
+        android:clipToPadding="false"
+        android:paddingBottom="72dp"
+        app:dividerColor="@color/divider_color"
+        app:thickHeight="3dp"
+        app:thickPadding="72dp"
+        app:thickWidth="14dp"
+        app:thinHeight="1dp" />
+
+    <include layout="@layout/include_add_action_button" />
+
+    <com.zoomlee.zoo.ui.view.ZMTextView
+        android:id="@+id/text_send_report"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:background="@drawable/report_background"
+        android:drawableLeft="@drawable/ic_mail_white"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_small" />
+
+    <com.zoomlee.zoo.ui.view.DateRangePicker
+        android:id="@+id/date_range_picker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/lockView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/bg_content"
+        android:filterTouchesWhenObscured="false" />
+
+    <com.zoomlee.zoo.ui.view.ZMTextView
+        android:id="@+id/renewBadge"
+        style="@style/IncitationText"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom"
+        android:background="@color/incitation_orange"
+        android:text="@string/renew_subscription_badge_text"
+        android:visibility="gone" />
+</FrameLayout>
+

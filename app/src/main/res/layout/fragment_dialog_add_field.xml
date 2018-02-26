@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/addTextField"
+        style="@style/ActionSheetItem"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:drawableLeft="@drawable/ic_add_text_field"
+        android:text="@string/add_text_field" />
+
+    <TextView
+        android:id="@+id/addDateField"
+        style="@style/ActionSheetItem"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:drawableLeft="@drawable/ic_add_date_field"
+        android:text="@string/add_date_field" />
+</LinearLayout>

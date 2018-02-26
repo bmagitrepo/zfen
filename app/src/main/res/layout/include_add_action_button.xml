@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addNewBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_gravity="bottom|right"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="16dp"
+    android:contentDescription="@string/description_new_document"
+    android:src="@drawable/action_button"
+    tools:showIn="@layout/fragment_categories" />

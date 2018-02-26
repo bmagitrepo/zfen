@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/divider_category_list"
+    android:dividerHeight="@dimen/divider_height"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:listSelector="@drawable/selectable_item_background"
+    android:theme="@style/Widget.Styled.ScrollView" />

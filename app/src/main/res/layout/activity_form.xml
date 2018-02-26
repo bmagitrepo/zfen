@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.radaee.reader.PDFLayoutView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.zoomlee.zoo.ui.view.ImageLoadingView
+        android:id="@+id/loading"
+        android:layout_width="@dimen/loading_spinner_width"
+        android:layout_height="@dimen/loading_spinner_height"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/report_background"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/editFormLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.zoomlee.zoo.ui.view.ZMButton
+                android:id="@+id/editBtn"
+                style="@style/ToolbarButton.Bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:duplicateParentState="true"
+                android:text="@string/title_fill_form"
+                app:font="@string/font_medium" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/white_60" />
+
+        <FrameLayout
+            android:id="@+id/printLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.zoomlee.zoo.ui.view.ZMButton
+                android:id="@+id/printBtn"
+                style="@style/ToolbarButton.Bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_print_white"
+                android:duplicateParentState="true"
+                android:text="@string/title_print_form"
+                app:font="@string/font_medium" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

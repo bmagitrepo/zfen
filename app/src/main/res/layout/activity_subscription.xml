@@ -1,0 +1,218 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/bg_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/familyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/envelope_background_gray"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="47dp"
+            android:paddingTop="48dp">
+
+            <ImageView
+                android:layout_width="213dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/zoomlee_family" />
+
+            <com.zoomlee.zoo.ui.view.ZMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21dp"
+                android:gravity="center"
+                android:text="@string/subscription_add_family"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                app:font="@string/font_regular" />
+
+            <LinearLayout
+                android:id="@+id/familySubscribeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:orientation="horizontal"
+                tools:visibility="gone">
+
+                <com.zoomlee.zoo.ui.view.ZMButton
+                    android:id="@+id/familyMonthBtn"
+                    style="@style/SubscriptionButton.Orange"
+                    android:layout_marginRight="22dp"
+                    android:duplicateParentState="true"
+                    android:text="@string/family_month_cost"/>
+
+                <com.zoomlee.zoo.ui.view.ZMButton
+                    android:id="@+id/familyYearBtn"
+                    style="@style/SubscriptionButton.Orange"
+                    android:duplicateParentState="true"
+                    android:text="@string/family_year_cost" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tryForFreeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <com.zoomlee.zoo.ui.view.ZMButton
+                    android:id="@+id/tryForFreeBtn"
+                    style="@style/SubscriptionButton.Orange"
+                    android:layout_marginBottom="6dp"
+                    android:duplicateParentState="true"
+                    android:text="@string/try_for_free" />
+
+                <com.zoomlee.zoo.ui.view.ZMTextView
+                    android:id="@+id/tryForFreeHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_small"
+                    app:font="@string/font_regular" />
+            </LinearLayout>
+
+            <com.zoomlee.zoo.ui.view.ZMTextView
+                android:id="@+id/familySubscribedTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/subscribed_badge"
+                android:gravity="center"
+                android:text="@string/you_are_subscribed"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:font="@string/font_regular" />
+
+            <com.zoomlee.zoo.ui.view.LoadingView
+                android:id="@+id/familyLoader"
+                android:layout_width="@dimen/loading_spinner_width"
+                android:layout_height="@dimen/loading_spinner_height"
+                android:contentDescription="@string/description_loading"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/proLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="27dp"
+            android:paddingTop="40dp">
+
+            <ImageView
+                android:layout_width="172dp"
+                android:layout_height="29dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/zoomlee_pro" />
+
+            <com.zoomlee.zoo.ui.view.ZMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="@string/subscription_add_family"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                app:font="@string/font_regular" />
+
+            <com.zoomlee.zoo.ui.view.ZMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="@string/subscription_track_you_trips"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                app:font="@string/font_regular" />
+
+            <com.zoomlee.zoo.ui.view.ZMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21dp"
+                android:gravity="center"
+                android:text="@string/subscription_immigration_forms"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                app:font="@string/font_regular" />
+
+            <LinearLayout
+                android:id="@+id/proSubscribeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.zoomlee.zoo.ui.view.ZMButton
+                    android:id="@+id/proMonthBtn"
+                    style="@style/SubscriptionButton.Green"
+                    android:layout_marginRight="22dp"
+                    android:duplicateParentState="true"
+                    android:text="@string/pro_month_cost" />
+
+                <com.zoomlee.zoo.ui.view.ZMButton
+                    android:id="@+id/proYearBtn"
+                    style="@style/SubscriptionButton.Green"
+                    android:duplicateParentState="true"
+                    android:text="@string/pro_year_cost"/>
+            </LinearLayout>
+
+            <com.zoomlee.zoo.ui.view.ZMTextView
+                android:id="@+id/proSubscribedTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/subscribed_badge"
+                android:gravity="center"
+                android:text="@string/you_are_subscribed"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:font="@string/font_regular" />
+
+            <com.zoomlee.zoo.ui.view.LoadingView
+                android:id="@+id/proLoader"
+                android:layout_width="@dimen/loading_spinner_width"
+                android:layout_height="@dimen/loading_spinner_height"
+                android:contentDescription="@string/description_loading"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="33dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="14dp"
+        android:padding="5dp"
+        android:src="@drawable/btn_back_green" />
+
+    <include layout="@layout/include_splash_cover" />
+
+</FrameLayout>

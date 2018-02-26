@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txt_reg_id" type="id">txt_reg_id</item>
+    <item name="txt_push_message" type="id">txt_push_message</item>
+</resources>

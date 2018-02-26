@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="NavigationDrawerItemView">
+        <attr name="text" format="string|reference" />
+        <attr name="itemIcon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ZMTextView">
+        <attr name="font" />
+    </declare-styleable>
+
+    <declare-styleable name="TaxDateView">
+        <attr name="name" format="string|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DocumentIconView">
+        <attr name="imagePadding" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ComplexDividerListView">
+        <attr name="thickWidth" format="dimension|reference" />
+        <attr name="thickHeight" format="dimension|reference" />
+        <attr name="thickPadding" format="dimension|reference" />
+        <attr name="thinHeight" format="dimension|reference" />
+        <attr name="dividerColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ZMEditText">
+        <attr name="state_error" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PersonView">
+        <attr name="personName" format="string|reference" />
+        <attr name="personAvatar" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="WheelDatePicker">
+        <attr name="shadowFrom" format="color|reference" />
+        <attr name="shadowTo" format="color|reference" />
+        <attr name="selectedBackground" format="reference" />
+        <attr name="textFont" format="string|reference" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSelectedColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="textTitle" format="string|reference" />
+        <attr name="textMessage" format="string|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="AnyProgressView">
+        <attr name="progressFrame" format="reference" />
+        <attr name="xDelta" format="integer|reference" />
+        <attr name="timeDelta" format="integer|reference" />
+    </declare-styleable>
+    <declare-styleable name="FieldEditView">
+        <attr name="title" />
+        <attr name="title_single_line" format="boolean" />
+        <attr name="hide_title" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FieldToggleView">
+        <attr name="header" format="string|reference" />
+        <attr name="body" format="string|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="FieldDateEditView">
+        <attr name="no_alert" format="boolean" />
+        <attr name="date_format" format="string|reference" />
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+        <attr name="init_run" format="boolean|reference" />
+    </declare-styleable>
+</resources>

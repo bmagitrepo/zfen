@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--we override margin bottom from include to make clickable area bigger-->
+    <include
+        android:layout_marginTop="@dimen/outer_field_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/include_field_title" />
+
+    <include layout="@layout/include_field_date_value" />
+</merge>

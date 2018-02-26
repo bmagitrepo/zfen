@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Android workspace\\Zoomlee\\ViewLib\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "E:\\Android workspace\\Zoomlee\\ViewLib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,100,391",
+                        "endLines": "2,9,12",
+                        "endColumns": "44,12,12",
+                        "endOffsets": "95,386,546"
+                    }
+                }
+            ]
+        }
+    ]
+}

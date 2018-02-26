@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_60"
+        android:visibility="gone" />
+
+    <!--height is sum of wheel picker and toggle, otherwise relative layout stretches to bottom-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="264dp">
+
+        <com.zoomlee.zoo.ui.view.wheel.WheelDatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/range_picker_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green_bright"
+            android:visibility="gone"
+            app:selectedBackground="@color/green_bright_dark"
+            app:shadowFrom="@color/green_bright"
+            app:textColor="@color/white"
+            app:textFont="@string/font_regular"
+            app:textSelectedColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/layout_end_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_above="@id/date_picker"
+            android:background="@color/green_bright"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/anchorView"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/divider_height"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:background="@color/white_50" />
+
+            <com.zoomlee.zoo.ui.view.ZMTextView
+                android:id="@+id/text_range_from"
+                style="@style/DateFilterToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/anchorView"
+                app:font="@string/font_bold"
+                tools:text="JAN 1, 2014" />
+
+            <com.zoomlee.zoo.ui.view.ZMTextView
+                android:id="@+id/text_range_to"
+                style="@style/DateFilterToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/anchorView"
+                app:font="@string/font_bold"
+                tools:text="DEC 31, 2014" />
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

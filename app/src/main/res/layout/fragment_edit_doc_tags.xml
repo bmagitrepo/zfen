@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zoomlee.zoo.ui.view.ComplexDividerRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tagsRv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:scrollbars="vertical"
+    app:dividerColor="@color/divider_color"
+    app:thickHeight="3dp"
+    app:thickPadding="@dimen/horizontal_margin"
+    app:thickWidth="14dp"
+    app:thinHeight="1dp" />

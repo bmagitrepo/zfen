@@ -1,0 +1,57 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/edit_picture_view"
+            layout="@layout/include_edit_picture_view" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            style="@style/ContentFrameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:font="@string/font_medium"
+            android:text="@string/name" />
+
+        <com.zoomlee.zoo.ui.view.ZMEditText
+            android:id="@+id/nameTv"
+            android:textSize="@dimen/text_large"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_marginTop="@dimen/horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/type_name_here"
+            android:textColor="@color/text_gray"
+            android:inputType="textCapWords"
+            android:singleLine="true" />
+
+        <com.zoomlee.zoo.ui.view.ZMButton
+            android:id="@+id/deleteBtn"
+            style="@style/Button.White"
+            android:layout_width="200dp"
+            app:font="@string/font_medium"
+            android:layout_height="@dimen/button_height_small"
+            android:layout_marginTop="@dimen/button_height_small"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/delete_family_member" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            android:id="@+id/deleteNoteTv"
+            app:font="@string/font_light"
+            android:layout_marginTop="@dimen/horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/delete_note"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_gray" />
+    </LinearLayout>
+</ScrollView>

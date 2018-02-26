@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <com.zoomlee.zoo.ui.view.ZMTextView
+        app:font="@string/font_light"
+        android:id="@+id/fieldNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tool:text="first name"
+        android:textColor="@color/text_empty"
+        android:textSize="@dimen/text_small"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/fieldValueTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tool:text="value"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_normal"
+        android:drawablePadding="8dp"
+        android:singleLine="true" />
+</LinearLayout>

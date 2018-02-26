@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zoomlee.zoo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="${applicationId}.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${applicationId}.permission.MAPS_RECEIVE" />
+
+    <application
+        android:name="com.zoomlee.zoo.ZoomleeApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+       <activity
+            android:name="com.zoomlee.zoo.ui.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen"
+            android:windowSoftInputMode="stateAlwaysVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.PasscodeActivity"
+            android:label="@string/title_activity_passcode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.PinActivity"
+            android:label="@string/title_activity_pin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Grey" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.SetPinActivity"
+            android:label="@string/title_activity_create_pin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.DocumentsActivity"
+            android:label="@string/title_activity_documents"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.DocumentDetailsActivity"
+            android:label="@string/title_activity_document_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.CountriesActivity"
+            android:label="@string/title_activity_countries"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.ChangeEmailPhoneActivity"
+            android:label="@string/phone_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.ConfirmationActivity"
+            android:label="@string/confirmation_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.CreateEditDocActivity"
+            android:label="@string/new_document"
+            android:parentActivityName="com.zoomlee.zoo.ui.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CreateEditDocScreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zoomlee.zoo.ui.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.PersonListActivity"
+            android:label="@string/title_activity_manage_persons"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.CreateEditPersonActivity"
+            android:label="@string/family_member"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.CategoryTypeListActivity"
+            android:label="@string/title_activity_category_type_list"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".ui.activity.CategoryTypeListActivity" />
+        </activity>
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.OpenDocumentActivity"
+            android:documentLaunchMode="always"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="@string/task_affinity_open_in"
+            android:theme="@style/AppTheme.White">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="application/pdf" />
+                <data android:mimeType="application/vnd.ms-excel" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                <data android:mimeType="application/msword" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                <data android:mimeType="application/vnd.ms-powerpoint" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation" />
+                <data android:mimeType="application/rtf" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.SelectPersonActivity"
+            android:label="@string/title_add_to_document"
+            android:screenOrientation="portrait"
+            android:taskAffinity="@string/task_affinity_open_in" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.SelectCategoryActivity"
+            android:label="@string/title_add_to_document"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.SelectDocumentActivity"
+            android:label="@string/title_add_to_document"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.AttachmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.SubscriptionActivity"
+            android:label="@string/subscription"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.TagsSettingsActivity"
+            android:label="@string/tags"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.InviteActivity"
+            android:label="@string/title_invite_to_zoomlee"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.PrintDialogActivity"
+            android:label="PrintDialogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.ImmigrationFormActivity"
+            android:label="ImmigrationFormActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.CreateEditTaxActivity"
+            android:label="@string/tax_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.SelectDocumentsActivity"
+            android:label="@string/add_document"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.EditFormActivity"
+            android:label="Edit Immigration Form"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.zoomlee.zoo.ui.activity.FormsArticlesActivity"
+            android:label="@string/description_of_articles_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- SERVICES -->
+
+        <service
+            android:name="com.zoomlee.zoo.syncservice.SyncService"
+            android:exported="false" />
+        <service
+            android:name="com.zoomlee.zoo.LocationService"
+            android:exported="false" />
+        <service android:name="com.zoomlee.zoo.SetNotificationsService" />
+
+        <!-- BROADCAST RECEIVERS -->
+
+        <receiver android:name="com.zoomlee.zoo.AlarmReceiver">
+            <intent-filter>
+                <action android:name="${applicationId}.android.receivers.NOTIFICATION_ALARM" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.zoomlee.zoo.BootReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.zoomlee.zoo.syncservice.NetworkChangeReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- PROVIDERS -->
+        <provider
+            android:name="com.zoomlee.zoo.provider.ZoomleeProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false" />
+
+        <provider
+            android:name="com.zoomlee.zoo.provider.FilesProvider"
+            android:authorities="${applicationId}.files_provider"
+            android:exported="false"
+            android:grantUriPermissions="true"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.analytics.globalConfigResource"
+            android:resource="@xml/global_tracker" />
+
+        <service android:name="com.zoomlee.zoo.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.zoomlee.zoo.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+
+
+    </application>
+
+</manifest>

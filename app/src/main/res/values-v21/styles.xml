@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="android:textCursorDrawable">@drawable/cursor_green</item>
+    </style>
+
+    <style name="BaseAppTheme" parent="IndependentTheme">
+        <item name="android:alertDialogStyle">@android:style/Theme.Material.Dialog.Alert</item>
+        <item name="android:colorEdgeEffect">@color/dark_orange</item>
+        <item name="android:searchViewStyle">@style/Widget.Styled.SearchView</item>
+        <item name="android:colorPrimaryDark">@color/status_green</item>
+        <item name="android:buttonStyle">@style/PlainButton</item>
+        <item name="android:colorControlActivated">@color/green_zoomlee</item>
+    </style>
+
+    <style name="AppTheme.White">
+        <item name="android:colorPrimaryDark">@color/status_white</item>
+    </style>
+
+    <style name="AppTheme.Grey">
+        <item name="android:colorPrimaryDark">@color/status_grey</item>
+        <item name="android:windowBackground">@color/bg_grey</item>
+    </style>
+
+    <style name="PlainButton" parent="android:Widget.Material.Button">
+        <item name="android:elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar" parent="android:Widget.Material.Light.ActionBar.Solid">
+        <item name="android:background">@color/green_zoomlee</item>
+    </style>
+
+    <style name="Widget.Styled.ScrollView" parent="android:Widget.ScrollView">
+        <item name="android:colorEdgeEffect">@color/dark_orange</item>
+    </style>
+
+    <style name="Widget.Styled.SearchView" parent="android:Widget.Material.Light.SearchView">
+        <item name="android:searchIcon">@drawable/person_me</item>
+        <item name="android:closeIcon">@android:color/transparent</item>
+        <item name="android:queryBackground">@android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,214 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Widget.Styled.ScrollView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/edit_picture_view"
+            layout="@layout/include_edit_picture_view" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            style="@style/ContentFrameTitle"
+            app:font="@string/font_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_information" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <TextView
+            android:id="@+id/phoneTv"
+            style="@style/ContentFrameText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:textColor="@color/text_hint"
+            android:text="@string/add_phone" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <TextView
+            android:id="@+id/emailTv"
+            style="@style/ContentFrameText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:textColor="@color/text_hint"
+            android:text="@string/add_email" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <TextView
+            android:id="@+id/changePin"
+            style="@style/ContentFrameText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/change_pin_code" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="40dp"
+            app:font="@string/font_light"
+            android:text="@string/you_can_log_in_to_zoomlee_using_both_phone_number_or_email"
+            android:textColor="@color/text_gray" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            app:font="@string/font_medium"
+            style="@style/ContentFrameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subscription" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <LinearLayout
+            android:id="@+id/subscriptionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:orientation="horizontal"
+            style="@style/ContentFrameText">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_large"
+                android:textColor="@color/text_gray"
+                android:text="@string/manage_subscription" />
+
+            <TextView
+                android:id="@+id/subscriptionBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/subscription_badge_bg"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+        </LinearLayout>
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            app:font="@string/font_medium"
+            style="@style/ContentFrameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_country" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <TextView
+            android:id="@+id/country"
+            style="@style/ContentFrameText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            app:font="@string/font_medium"
+            style="@style/ContentFrameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/family_and_tags" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <TextView
+            android:id="@+id/managerFamilyTv"
+            style="@style/ContentFrameText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/manage_family_members" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <TextView
+            android:id="@+id/tagsTv"
+            android:text="@string/tags"
+            style="@style/ContentFrameText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            style="@style/ContentFrameTitle"
+            app:font="@string/font_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invite" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <TextView
+            android:id="@+id/inviteTv"
+            android:text="@string/invite_friends_to_zoomlee"
+            style="@style/ContentFrameText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingTop="0dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="40dp"
+            app:font="@string/font_light"
+            android:text="@string/if_you_like_zoomlee_invite_your_friends_so_they_also_can_store_all_their_documents_in_one_place"
+            android:textColor="@color/text_gray" />
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            app:font="@string/font_medium"
+            style="@style/ContentFrameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <TextView
+            android:id="@+id/writeGooglePlayTv"
+            style="@style/ContentFrameText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/write_play_market_review" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <TextView
+            android:id="@+id/writeEmailTv"
+            style="@style/ContentFrameText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/email_feedback" />
+
+        <include layout="@layout/include_separator_content_frame" />
+
+        <com.zoomlee.zoo.ui.view.ZMButton
+            android:id="@+id/logout"
+            app:font="@string/font_medium"
+            android:layout_height="@dimen/button_height_small"
+            android:layout_width="115dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="44dp"
+            android:layout_marginTop="48dp"
+            style="@style/Button.White"
+            android:text="@string/logout_uc" />
+    </LinearLayout>
+</ScrollView>

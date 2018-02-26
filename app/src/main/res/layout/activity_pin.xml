@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.zoomlee.zoo.ui.activity.PinActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.zoomlee.zoo.ui.view.ZMTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="@dimen/horizontal_margin"
+            app:font="@string/font_medium"
+            android:textSize="18sp"
+            android:text="@string/enter_your_pin_code"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/pincodeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pinItem1"
+                style="@style/PinItem" />
+
+            <ImageView
+                android:id="@+id/pinItem2"
+                style="@style/PinItem" />
+
+            <ImageView
+                android:id="@+id/pinItem3"
+                style="@style/PinItem" />
+
+            <ImageView
+                android:id="@+id/pinItem4"
+                style="@style/PinItem" />
+        </LinearLayout>
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:orientation="horizontal"
+            app:columnCount="3"
+            app:rowCount="4"
+            android:layout_marginBottom="10dp">
+
+            <com.zoomlee.zoo.ui.view.ZMButton
+                app:font="@string/font_light"
+                android:id="@+id/button01"
+                style="@style/PinButton"
+                android:text="1" />
+
+            <com.zoomlee.zoo.ui.view.ZMButton
+                app:font="@string/font_light"
+                android:id="@+id/button02"
+                style="@style/PinButton"
+                android:text="2" />
+
+            <com.zoomlee.zoo.ui.view.ZMButton
+                app:font="@string/font_light"
+                android:id="@+id/button03"
+                style="@style/PinButton"
+                android:text="3" />
+
+            <com.zoomlee.zoo.ui.view.ZMButton
+                app:font="@string/font_light"
+                android:id="@+id/button04"
+                style="@style/PinButton"
+                android:text="4" />
+
+            <com.zoomlee.zoo.ui.view.ZMButton
+                app:font="@string/font_light"
+                android:id="@+id/button05"
+                style="@style/PinButton"
+                android:text="5" />
+
+            <com.zoomlee.zoo.ui.view.ZMButton
+                app:font="@string/font_light"
+                android:id="@+id/button06"
+                style="@style/PinButton"
+                android:text="6" />
+
+            <com.zoomlee.zoo.ui.view.ZMButton
+                app:font="@string/font_light"
+                android:id="@+id/button07"
+                style="@style/PinButton"
+                android:text="7" />
+
+            <com.zoomlee.zoo.ui.view.ZMButton
+                app:font="@string/font_light"
+                android:id="@+id/button08"
+                style="@style/PinButton"
+                android:text="8" />
+
+            <com.zoomlee.zoo.ui.view.ZMButton
+                app:font="@string/font_light"
+                android:id="@+id/button09"
+                style="@style/PinButton"
+                android:text="9" />
+
+            <com.zoomlee.zoo.ui.view.ZMButton
+                app:font="@string/font_light"
+                android:id="@+id/button00"
+                style="@style/PinButton"
+                app:layout_column="1"
+                android:text="0" />
+
+            <ImageView
+                android:contentDescription="@string/description_delete"
+                android:id="@+id/del"
+                android:layout_width="@dimen/pinbutton_size"
+                android:layout_height="@dimen/pinbutton_size"
+                app:layout_column="2"
+                android:scaleType="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/del_btn" />
+        </android.support.v7.widget.GridLayout>
+
+        <TextView
+            android:id="@+id/forgotPinTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:padding="8dp"
+            android:text="@string/i_forgot_my_pin"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/green_zoomlee" />
+    </LinearLayout>
+</RelativeLayout>
