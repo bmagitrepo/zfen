@@ -156,8 +156,10 @@ public class ChangeEmailPhoneActivity extends SecuredActionBarActivity {
         if (formatedPhone != null)
             login = formatedPhone;
         DeveloperUtil.michaelLog(login);
-        api.updatePhoneEmail(user.getPrivateKey(), user.getRemoteId(), null, login, loginCallback);
+       api.updatePhoneEmail(user.getPrivateKey(), user.getRemoteId(), null, login, loginCallback);
+
     }
+
 
     private void updateEmail() {
         DeveloperUtil.michaelLog();

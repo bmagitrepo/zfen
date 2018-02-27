@@ -34,7 +34,7 @@ android {
     }
 
     buildTypes {
-        
+
         /**
          * Looking at test server but has release signing certificate and package name.
          */
@@ -153,6 +153,9 @@ dependencies {
         exclude group: 'com.squareup'
     }
     androidTestImplementation('com.android.support.test:testing-support-lib:0.1')
+}
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
 }
 dependencies {
     implementation 'com.android.support.constraint:constraint-layout:+'

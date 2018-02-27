@@ -12,7 +12,6 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.android.vending.billing.util.IabHelper;
 import com.android.vending.billing.util.IabResult;
 import com.android.vending.billing.util.Inventory;
@@ -37,12 +36,10 @@ import com.zoomlee.zoo.utils.GAUtil;
 import com.zoomlee.zoo.utils.IntentUtils;
 import com.zoomlee.zoo.utils.RequestCodes;
 import com.zoomlee.zoo.utils.SharedPreferenceUtils;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import butterknife.ButterKnife;
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -58,28 +55,25 @@ import retrofit.RestAdapter;
 
 public class SubscriptionActivity extends SecuredActionBarActivity implements IabHelper.OnIabSetupFinishedListener, IabHelper.OnIabPurchaseFinishedListener {
 
-//    private static final String PRO_YEAR_SKU = "zoomlee_pro_y";//Managed products
-     static final String PRO_YEAR_SKU = "zoomlee_year_plan";//Managed products
-         static final String PRO_MONTH_SKU = "zoomlee_month_plan";
-//    private static final String PRO_MONTH_SKU = "zoomleelasttest";
-//    private static final String PRO_MONTH_SKU = "zoomlee_pro_m";
+//  private static final String PRO_YEAR_SKU = "zoomlee_pro_y";//Managed products
+    private static final String PRO_YEAR_SKU = "bma_year ";//Managed products
+    private static final String PRO_MONTH_SKU = "abc_month";
+//  private static final String PRO_MONTH_SKU = "zoomleelasttest";
+//  private static final String PRO_MONTH_SKU = "zoomlee_pro_m";
     private static final String FAMILY_YEAR_SKU = "zoomlee_family_yy";//subscription
     private static final String FAMILY_MONTH_SKU = "zoomlee_family_m";
-
     public static final int REQUEST_CODE = 1001;
+    static final int RC_REQUEST = 10001;
     private final BillingApi billingApi = new RestAdapter.Builder()
             .setEndpoint(ApiUrl.API_URL)
             .setLogLevel(RestAdapter.LogLevel.FULL)
             .build().create(BillingApi.class);
-
     private final UserDataApi userApi = new RestAdapter.Builder()
             .setEndpoint(ApiUrl.API_URL)
             .setLogLevel(RestAdapter.LogLevel.FULL)
             .build().create(UserDataApi.class);
-
     private boolean isSetuped;
     private Purchase currentPurchase;
-
     @BindView(R.id.mainLayout)
     LinearLayout mainLayout;
     @BindView(R.id.familyLayout)
@@ -98,7 +92,6 @@ public class SubscriptionActivity extends SecuredActionBarActivity implements Ia
     TextView tryForFreeHint;
     @BindView(R.id.familySubscribedTv)
     TextView familySubscribedTv;
-
     @BindView(R.id.proLayout)
     LinearLayout proLayout;
     @BindView(R.id.proSubscribeLayout)
@@ -109,26 +102,20 @@ public class SubscriptionActivity extends SecuredActionBarActivity implements Ia
     Button proYearBtn;
     @BindView(R.id.proSubscribedTv)
     TextView proSubscribedTv;
-
     @BindView(R.id.familyLoader)
     LoadingView familyLoader;
     @BindView(R.id.proLoader)
     LoadingView proLoader;
     @BindView(R.id.backBtn)
     View backBtn;
-
     private String familyMonthPrice;
     private String familyYearPrice;
     private String proMonthPrice;
     private String proYearPrice;
     private int familyTrialMonths;
-
     private final Map<String, SkuDetails> skuDetails = new HashMap<>();
-
     private IabHelper billingHelper;
-
     private String zoomleeKey;
-
     private final Handler handler = new Handler();
     private BillingUtils.ActionType actionType;
 
@@ -159,7 +146,7 @@ public class SubscriptionActivity extends SecuredActionBarActivity implements Ia
         showFamilyLoaders();
         showProLoaders();
 
-            String rsa_key = getString(R.string.rsa_key);
+        String rsa_key = getString(R.string.rsa_key);
         billingHelper = new IabHelper(this, rsa_key);
         billingHelper.startSetup(this);
         zoomleeKey = SharedPreferenceUtils.getUtils().getPrivateKey();
@@ -417,11 +404,11 @@ public class SubscriptionActivity extends SecuredActionBarActivity implements Ia
             case R.id.proMonthBtn:
                 showProLoaders();
 //                billingHelper.launchPurchaseFlow(this, PRO_MONTH_SKU, RequestCodes.PAY_SUBS, this);
-                billingHelper.launchPurchaseFlow(this, PRO_MONTH_SKU, RequestCodes.PAY_SUBS, this);
+                billingHelper.launchPurchaseFlow(this, PRO_MONTH_SKU, RC_REQUEST, this);
                 break;
             case R.id.proYearBtn:
                 showProLoaders();
-                billingHelper.launchPurchaseFlow(this, PRO_YEAR_SKU, RequestCodes.PAY_SUBS, this);
+                billingHelper.launchPurchaseFlow(this, PRO_YEAR_SKU, RC_REQUEST, this);
                 break;
             case R.id.backBtn:
                 onBackPressed();
@@ -438,14 +425,12 @@ public class SubscriptionActivity extends SecuredActionBarActivity implements Ia
             consumeProducut(currentPurchase);
             userApi.getUser(zoomleeKey, SharedPreferenceUtils.getUtils().getUserSettings().getRemoteId(), getUserCallBack);
         }
-
         @Override
         protected void error(Error error) {
             Log.e("Enteredforbilling","Failure");
             DeveloperUtil.michaelLog(error);
             applySubscriptionState();
         }
-
     };
 
     private ZoomleeCallback<CommonResponse<User>> getUserCallBack = new ZoomleeCallback<CommonResponse<User>>() {
@@ -540,6 +525,5 @@ public class SubscriptionActivity extends SecuredActionBarActivity implements Ia
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         billingHelper.handleActivityResult(requestCode, resultCode, data);
-
     }
 }

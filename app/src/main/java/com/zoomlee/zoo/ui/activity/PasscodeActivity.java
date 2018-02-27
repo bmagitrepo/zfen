@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
@@ -155,6 +156,7 @@ public class PasscodeActivity extends SecuredActionBarActivity implements Passco
 
         @Override
         protected void success(Object response) {
+            Log.e("SENDPASSCODEOBJ",response.toString());
             User user = (User) response;
             User prevUser = SharedPreferenceUtils.getUtils().getUserSettings();
             if (prevUser.getRemoteId() != -1 && prevUser.getRemoteId() != user.getRemoteId()) {

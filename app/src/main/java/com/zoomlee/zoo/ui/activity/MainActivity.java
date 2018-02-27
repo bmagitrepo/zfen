@@ -419,13 +419,13 @@ public class MainActivity extends SecuredActionBarActivity implements Navigation
     }
 
     private void setContentForms() {
-//        if (BillingUtils.canStart(this, BillingUtils.ActionType.IMMIGRATION_FORMS)) {
+        if (BillingUtils.canStart(this, BillingUtils.ActionType.IMMIGRATION_FORMS)) {
             getSupportActionBar().setTitle(R.string.forms);
             updateABAvatar();
             formsFragment = formsFragment == null ? FormsFragment.newInstance() : formsFragment;
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_frame, formsFragment).commit();
-//        }
+        }
     }
 
     private void setContentNotifications() {
@@ -438,13 +438,13 @@ public class MainActivity extends SecuredActionBarActivity implements Navigation
 
     private void setContentMyTrips() {
         // here get taxes first
-//        if (BillingUtils.canStart(this, BillingUtils.ActionType.TAXES)) {
+        if (BillingUtils.canStart(this, BillingUtils.ActionType.TAXES)) {
             getSupportActionBar().setTitle(R.string.title_tax_tracking);
             updateABAvatar(null);
             myTripsFragment = myTripsFragment == null ? MyTripsFragment.newInstance() : myTripsFragment;
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_frame, myTripsFragment).commit();
-//        }
+        }
     }
 
     private void setContentBeSafe() {
@@ -489,7 +489,6 @@ public class MainActivity extends SecuredActionBarActivity implements Navigation
             case NavigationDrawerFragment.COMMUNITY_MI:
                 throw new IllegalStateException("CommunityFragment does not exist, community item should open browser");
         }
-
         return null;
     }
 
@@ -511,5 +510,4 @@ public class MainActivity extends SecuredActionBarActivity implements Navigation
         void onSave();
         void onCancel();
     }
-
 }
