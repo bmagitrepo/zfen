@@ -419,7 +419,9 @@ public class MainActivity extends SecuredActionBarActivity implements Navigation
     }
 
     private void setContentForms() {
-        if (BillingUtils.canStart(this, BillingUtils.ActionType.IMMIGRATION_FORMS)) {
+
+        startActivity(new Intent(getApplicationContext(),Subscriptionone.class));
+                if (BillingUtils.canStart(this, BillingUtils.ActionType.IMMIGRATION_FORMS)) {
             getSupportActionBar().setTitle(R.string.forms);
             updateABAvatar();
             formsFragment = formsFragment == null ? FormsFragment.newInstance() : formsFragment;

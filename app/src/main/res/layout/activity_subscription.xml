@@ -91,6 +91,8 @@
                     android:textColor="@color/text_gray"
                     android:textSize="@dimen/text_small"
                     app:font="@string/font_regular" />
+
+
             </LinearLayout>
 
             <com.zoomlee.zoo.ui.view.ZMTextView

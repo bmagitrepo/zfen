@@ -144,6 +144,7 @@ public class BillingUtils {
 
         if (!canStart) {
             SubscriptionActivity.startActivity(activity, actionType);
+
         }
 
         return canStart;

@@ -161,6 +161,7 @@ public class SubscriptionActivity extends SecuredActionBarActivity implements Ia
         Log.d("whichfirst","resume");
 
         EventBus.getDefault().register(this);
+
         applySubscriptionState();
         billingApi.billingTypes(zoomleeKey, getTrialsCallback);
 
@@ -199,8 +200,7 @@ public class SubscriptionActivity extends SecuredActionBarActivity implements Ia
             Log.d("Loadsuccess", "success");
             isSetuped = true;
             loadPrices();
-        }
-        else {
+        } else {
             Log.d("Loadsuccess","failure");
         }
     }
